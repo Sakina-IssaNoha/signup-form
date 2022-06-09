@@ -3,10 +3,12 @@ package com.sakina.workout
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Patterns
 import android.widget.Button
 import android.widget.TextView
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
+import java.util.regex.Pattern
 
 class login : AppCompatActivity() {
     lateinit var btnlogin : Button
@@ -47,6 +49,12 @@ class login : AppCompatActivity() {
             tilemail.error = "E-mail is required"
             error = true
         }
+
+        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+            tilemail.error="Not a valid email address"
+            error=true
+        }
+
         var password = etpassword.text.toString()
         if (password.isBlank()){
             etpassword.error = "Password is required"

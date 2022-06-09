@@ -78,8 +78,11 @@ class SignUp : AppCompatActivity() {
             tilpassword2.error = "Password is required"
             error = true
     }
-        if(!error){
+       if (password1!=password2){
+           tilpassword2.error="Wrong Password"
 
         }
+        if(!error){
          }
 }
+     }
