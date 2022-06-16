@@ -16,7 +16,7 @@
         app:menu="@menu/bottom_nav_menu"/>
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fcview"
+        android:id="@+id/fcvhome"
         android:name="com.sakina.workout.PlanFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
