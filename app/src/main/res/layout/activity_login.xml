@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login">
+    tools:context=".ui.login">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -18,6 +18,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
+        app:startIconDrawable="@drawable/ic_baseline_email_24"
         android:layout_marginEnd="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,6 +44,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:startIconDrawable="@drawable/ic_baseline_vpn_key_24"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tilemail"
         app:passwordToggleEnabled="true"
