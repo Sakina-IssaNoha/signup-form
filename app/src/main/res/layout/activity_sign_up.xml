@@ -30,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
-            android:hint="FirstName"
+            android:hint="@string/firstname"
             android:inputType="textPersonName" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -51,7 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
-            android:hint="LastName"
+            android:hint="@string/lastname"
             android:inputType="textPersonName" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -150,8 +150,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
-        android:hint="Phone Number"
-        android:background="@android:color/transparent"
+        android:hint="@string/phone_number"
         app:startIconDrawable="@drawable/ic_baseline_local_phone_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -160,6 +159,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etphonenumber"
             android:layout_width="match_parent"
+            android:background="@android:color/transparent"
             android:layout_height="wrap_content"
             android:inputType="phone" />
     </com.google.android.material.textfield.TextInputLayout>
